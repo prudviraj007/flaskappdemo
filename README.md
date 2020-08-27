@@ -77,6 +77,21 @@ To calculate the above totals for a specific userid by a specific month, the fol
   "total_win": "14.1"
 }
  ```
- To add a specific game type parameter, you can add either '0' or '1' to the end point.
+ To add a specific game type parameter, you can add either '0' or '1' to the end point. Game type indicates if the wager is with 0=Real money or 1=Bonus money
+ 
+ For example:
+ 
+ ```
+ localhost:5000/1001/totalwin/201701/01
+ ```
+ 
+  hitting the above URL gives the result :
+ 
+ ```
+ {
+  "total_win": "14.1"
+}
+ ```
+ 
  
  
