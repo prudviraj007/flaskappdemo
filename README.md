@@ -28,7 +28,7 @@ def win_total(userid):
  30.799999999999997
  ```
  
- #Passing additionnal parameters
+ # Passing additionnal parameters
  
  To get total win amount for a specific userid, the following endpoint should be used :
  
