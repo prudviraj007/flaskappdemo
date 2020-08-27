@@ -7,6 +7,13 @@ gamesyschallenge
 
   ```pip install flask_csv```
   
+  Import Flask & jsonify packages from flask library to convert outputs to json format. Install & import pandas package to handle CSV data transformations.
+  
+  ```
+  from flask import Flask,jsonify
+  import pandas as pd
+  ```
+  
  # How to use ?
  
  
@@ -25,7 +32,9 @@ def win_total(userid):
  Hitting this end point will return the total win amount :
  
   ```
- 30.799999999999997
+{
+  "total_win": "30.799999999999997"
+}
  ```
  
  # Passing parameters
@@ -64,6 +73,10 @@ To calculate the above totals for a specific userid by a specific month, the fol
  hitting the above URL gives the result :
  
  ```
- 14.1
+ {
+  "total_win": "14.1"
+}
  ```
+ To add a specific game type parameter, you can add either '0' or '1' to the end point.
+ 
  
