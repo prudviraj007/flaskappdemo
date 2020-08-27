@@ -32,18 +32,18 @@ def win_total(userid):
  
  To get total win amount for a specific userid, the following URL should be used :
  
- '''
- localhost:5000/userid/totalwin
- '''
+```
+ <host>:5000/userid/totalwin
+ ```
  To get total wager amount for a specific userid, the following URL should be used :
  
- '''
- localhost:5000/userid/totalwager
- '''   
+ ```
+ <host>:5000/userid/totalwager
+ ```   
  
  To get total number of wagers for a specific userid, the following URL should be used :
  
- '''
- localhost:5000/userid/wagercount
- '''
+ ```
+ <host>:5000/userid/wagercount
+ ```
     
