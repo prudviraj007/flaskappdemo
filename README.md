@@ -30,20 +30,37 @@ def win_total(userid):
  
  #Passing additionnal parameters
  
- To get total win amount for a specific userid, the following URL should be used :
+ To get total win amount for a specific userid, the following endpoint should be used :
  
 ```
  <host>:5000/userid/totalwin
  ```
- To get total wager amount for a specific userid, the following URL should be used :
+ To get total wager amount for a specific userid, the following endpoint should be used :
  
  ```
  <host>:5000/userid/totalwager
  ```   
  
- To get total number of wagers for a specific userid, the following URL should be used :
+ To get total number of wagers for a specific userid, the following endpoint should be used :
  
  ```
  <host>:5000/userid/wagercount
  ```
-    
+ To calculate the above totals for a specific userid by a specific month, the following endpoint should be used :  
+ 
+ ```
+ <host>:5000/userid/<total_param>/<year_month>
+ ```
+ 
+ For example :
+ 
+ ```
+ localhost:5000/1001/totalwin/201701
+ ```
+ 
+ hitting the above URL gives the result :
+ 
+ ```
+ 14.1
+ ```
+ 
