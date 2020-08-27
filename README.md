@@ -28,7 +28,7 @@ def win_total(userid):
  30.799999999999997
  ```
  
- # Passing additionnal parameters
+ # Passing parameters
  
  To get total win amount for a specific userid, the following endpoint should be used :
  
@@ -46,7 +46,10 @@ def win_total(userid):
  ```
  <host>:5000/userid/wagercount
  ```
- To calculate the above totals for a specific userid by a specific month, the following endpoint should be used :  
+
+# Passing Optional Parameters
+
+To calculate the above totals for a specific userid by a specific month, the following endpoint should be used :  
  
  ```
  <host>:5000/userid/<total_param>/<year_month>
