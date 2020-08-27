@@ -10,8 +10,20 @@ gamesyschallenge
  # How to use ?
  
  
- Flask-CSV has a simple hepler method named send_csv which allows you to send csv files in flask endpoints. It takes an iterable of dict, a filename and a list of fields. The keys of all dict in the iterable must correspond to given fields.
+ The Flask app directly reads the csv data from the source directory and It will return a response object with the calculated values
+ For example with the user id 1001 :
+ 
+ ```
+ @app.route("/totalwin/<int:userid>")
+def win_total(userid):
+    df = pd.read_csv("C:\\Users\\admin\\Downloads\\DB_Setup\\Revenue_Analysis_Test_Data.csv")
+    df_total=df.groupby(['MEMBER_ID'])['WIN_AMOUNT'].sum().to_dict()
+    return str(df_total[userid])
+ ```
 
-It will return a Response object with filename set and body containing the CSV data.
-
-You will better understand with a short example.
+ 
+ Hitting this end point will return the total win amount :
+ 
+  ```
+ 30.799999999999997
+ ```
