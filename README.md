@@ -82,7 +82,7 @@ To calculate the above totals for a specific userid by a specific month, the fol
  For example:
  
  ```
- localhost:5000/1001/totalwin/201701/01
+ localhost:5000/1001/totalwin/201701/0
  ```
  
   hitting the above URL gives the result :
