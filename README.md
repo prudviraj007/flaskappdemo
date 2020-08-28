@@ -5,7 +5,9 @@ gamesyschallenge
     
     Flask app is packaged and you can use pip to install it:
 
-  ```pip install flask_csv```
+  ```
+  pip install flask_csv
+  ```
   
   Import Flask & jsonify packages from flask library to convert outputs to json format. Install & import pandas package to handle CSV data transformations.
   
